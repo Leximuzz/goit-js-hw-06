@@ -1,0 +1,20 @@
+{
+  "extends": [
+    "@parcel/config-default"
+  ],
+  "reporters": [
+    "...",
+    "parcel-reporter-clean-dist"
+  ],
+
+  "printWidth": 80,
+     "tabWidth":2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "bracketSpacing": true,
+  "arrowParens": "avoid",
+      "jsxBracketSameLine": false,
+  "proseWrap": "always"
+}
