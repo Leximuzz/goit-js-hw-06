@@ -19,14 +19,19 @@ removeItem(itemToRemove) — приймає рядок з назвою това�
 */
 class Storage {
   #items;
-  getItems;
-  addItem;
-
-  getItems(items) {
-    return items;
+  constructor(ithems) {
+    this.#items = ithems;
   }
-  addItem(newItem) {}
-  removeItem(itemToRemove) {}
+
+  getItems() {
+    return this.#items;
+  }
+  addItem(newItem) {
+    this.#items.push(newItem);
+  }
+  removeItem(itemToRemove) {
+    this.#items = this.#items.filter(item => item !== itemToRemove);
+  }
 }
 
 const storage = new Storage(['Nanitoids', 'Prolonger', 'Antigravitator']);
